@@ -22,7 +22,7 @@ function getParam(val) {
 }
 function addLink(param) {
     for (let i = 0; i < param.length; i++) {
-        $('.results').append(`<p class="clear">Name of Repo: ${param[i].name}</p><a href="${param[i].html_url}" target="_blank" class="clear">Live Link</a>`);
+        $('.results').append(`<p class="clear">Name of Repo: ${param[i].name}</p><a href="${param[i].html_url}" target="_blank" class="clear">Link: ${param[i].name}</a>`);
     }
 }
 $(handleSearch);
